@@ -2,13 +2,13 @@
 
 /**
  * mul - input
- * Description: multiplies two integers
- * @a: character to be multiplied with
- * @b: character to be multiplied with
- * Return: the result
+ * Description: multiplies 2 numbers
+ * @a: first number
+ * @b: second number
+ * Return: the answer
  */
 
 int mul(int a, int b)
 {
-	return(a * b);
+	return (a * b);
 }
