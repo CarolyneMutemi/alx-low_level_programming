@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_most_numbers - input
+ * print_most_numbers - entry point
  *
- * Description: prints the numbers from 0 to 9 followed by a new line
+ * Description: Prints the numbers with _putchar
  *
  * Return: void
  */
