@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * mul - multiplies two integers.
+ * mul - input
  *
+ * Description: multiplies two integers.
  * @a: character to be multiplied with.
  * @b: character to be multiplied with.
  * Return: the result.
