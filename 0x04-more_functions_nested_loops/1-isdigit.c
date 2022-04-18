@@ -3,9 +3,9 @@
 /**
  * _isdigit - input
  *
- * Description: checks for a digit (0 through 9).
- * @c: character
- * Return: 1 if c is a digit, 0 otherwise
+ * Description: define if a character is a number
+ * @c: charater
+ * Return: 1 yes 0 no
  */
 
 int _isdigit(int c)
