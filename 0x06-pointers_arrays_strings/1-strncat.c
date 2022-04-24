@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - function that concatenates two strings with n chars in src
+ * _strncat - concatenates two strings with n chars in src
  * @dest: Pointer char dest
  * @src: Pointer char src
  * @n: number of chars to concatenate.
@@ -11,8 +11,8 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int a, b;
-	a = 0;
 
+	a = 0;
 	while (dest[a] != '\0')
 	{
 		a++;
@@ -23,6 +23,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[a] = src[b];
 		a++;
 	}
-	dest[a] = '\0';
 	return (dest);
 }
