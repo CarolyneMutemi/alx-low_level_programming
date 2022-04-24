@@ -4,7 +4,7 @@
  * _strncat - function that concatenates two strings with n chars in src
  * @dest: Pointer char dest
  * @src: Pointer char src
- * @n: Parameter n (number of chars to concatenate)
+ * @n: number of chars to concatenate.
  * Return: dest
  */
 
@@ -23,5 +23,6 @@ char *_strncat(char *dest, char *src, int n)
 		dest[a] = src[b];
 		a++;
 	}
+	dest[a] = '\0';
 	return (dest);
 }
