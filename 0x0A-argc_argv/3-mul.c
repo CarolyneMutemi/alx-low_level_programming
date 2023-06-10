@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * Your program should print the result of the multiplication,
- followed by a new line
- * You can assume that the two numbers and result of the
- * multiplication can be stored in an integer
- * If the program does not receive two arguments,
- * your program should print Error,
- * followed by a new line, and return 1
+/**
+ * main - main function with arguments argc and *argv -
+ * program that multiplies two numbers.
+ * @argc: number of words (arguments)
+ * entered in the line where the program is called.
+ * @argv: pointers to each string formed
+ * by entering the words (arguments).
+ * Return: 0 (Success).
  */
 
 int main(int argc, char *argv[])

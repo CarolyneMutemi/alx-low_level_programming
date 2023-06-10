@@ -7,7 +7,7 @@
  * entered in the line where the program is called.
  * @argv: pointers to each string formed
  * by entering the words (arguments).
- * Return: 0 (Succes).
+ * Return: 0 (Success).
  */
 
 int main(int argc, char *argv[])
