@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-int main(int argc, char* argv[])
+/*
+ * Program that prints the number of arguments passed into it.
+ */
+
+int main(int argc, char *argv[])
 {
+(void)argv;
+printf("%d\n", argc - 1);
 
-    (void)argv;
-    printf("%d\n", argc-1);
-
-    return (0);
+return (0);
 }
