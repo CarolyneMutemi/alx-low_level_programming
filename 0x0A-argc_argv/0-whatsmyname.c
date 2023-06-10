@@ -1,17 +1,22 @@
 #include <stdio.h>
-#include "main.h"
 
-/*
- * A program that prints its name, followed by a new line.
- * If you rename the program, it will print the new name,
- * without having to compile it again
- * Path before the name of the program will stay.
+/**
+ * main - main function with arguments argc and *argv -
+ * program that prints its name, followed by a new line.
+ * @argc: number of words (arguments)
+ * entered in the line where the program is called.
+ * @argv: pointers to each string formed
+ * by entering the words (arguments).
+ * Return: 0 (Succes).
  */
 
 int main(int argc, char *argv[])
 {
-(void)argc;
-printf("%s\n", argv[0]);
+	int a;
 
-return (0);
+	for (a = 0; a < argc; a++)
+	{
+		printf("%s\n", argv[a]);
+	}
+	return (0);
 }
