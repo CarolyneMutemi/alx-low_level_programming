@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
 
 /**
  * main - main function with arguments argc and *argv -
@@ -9,28 +8,26 @@
  * entered in the line where the program is called.
  * @argv: pointers to each string formed
  * by entering the words (arguments).
- * Return: 1 for error or 0 (Success).
+ * Return: 1 for error or 0 (Succes).
  */
 
 int main(int argc, char *argv[])
 {
-int index, sum = 0;
-if (argc == 1)
-printf("0\n");
-else
-{
-for (index = 1; index < argc; index++)
-{
-if (isdigit(*argv[index]) == 0)
-{
-printf("Error\n");
-return (1);
-}
+	int a, b, sum = 0;
 
-sum += atoi(argv[index]);
-}
-printf("%d\n", sum);
-}
+	for (a = 1; a < argc; a++)
+	{
+		for (b = 0; argv[a][b]; b++)
+		{
+			if (argv[a][b] < 48 || argv[a][b] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum = sum + atoi(argv[a]);
+	}
+	printf("%d\n", sum);
+	return (0);
 
-return (0);
 }
