@@ -18,11 +18,11 @@ int **p_pArr = malloc(sizeof(int *) * height);
 if (width <= 0 || height <= 0)
 return (NULL);
 
-/*if (p_pArr == NULL)
+if (p_pArr == NULL)
 {
 return (NULL);
 free(p_pArr);
-}*/
+}
 
 for (i = 0; i < height; i++)
 {
@@ -32,11 +32,11 @@ for (j = 0; j < width; j++)
 p_pArr[i][j] = 0;
 }
 }
-return (p_pArr);
-
 for (i = 0; i < height; i++)
 {
 free(p_pArr[i]);
 }
 free(p_pArr);
+
+return (p_pArr);
 }
