@@ -12,7 +12,7 @@
 
 int **alloc_grid(int width, int height)
 {
-int i, j;
+int i, j, a;
 int **p_pArr = malloc(sizeof(int *) * height);
 
 if (width <= 0 || height <= 0)
@@ -32,9 +32,9 @@ p_pArr[i][j] = 0;
 
 return (p_pArr);
 
-for (i = 0; i < height; i++)
+for (a = 0; a < height; a++)
 {
-free(p_pArr[i]);
+free(p_pArr[a]);
 }
 free(p_pArr);
 }
