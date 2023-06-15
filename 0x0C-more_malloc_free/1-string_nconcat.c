@@ -24,9 +24,10 @@ for (j = 0; s2[j] != '\0'; j++)
 ;
 
 if (n >= j + 1)
-n = j;
-
+total = i + j + 1;
+else
 total = i + n + 1;
+
 arr = malloc(total);
 
 if (arr == NULL)
