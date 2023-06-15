@@ -20,8 +20,8 @@ return (NULL);
 while (str[j] != '\0')
 {
 j++;
-j += 1;
 }
+j++;
 
 new_str = malloc(sizeof(char) * j);
 
