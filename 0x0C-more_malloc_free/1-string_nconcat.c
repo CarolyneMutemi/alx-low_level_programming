@@ -23,7 +23,7 @@ for (i = 0; s1[i] != '\0'; i++)
 for (j = 0; s2[j] != '\0'; j++)
 ;
 
-if (n >= j)
+if (n >= j + 1)
 n = j;
 
 total = i + n + 1;
