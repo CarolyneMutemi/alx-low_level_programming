@@ -38,7 +38,7 @@ for (i = 0; s1[i] != '\0'; i++)
 arr[i] = s1[i];
 }
 
-for (j = 0; j < n; j++)
+for (j = 0; i < total; j++)
 {
 arr[i] = s2[j];
 i++;
