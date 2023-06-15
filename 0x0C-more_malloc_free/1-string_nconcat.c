@@ -42,6 +42,7 @@ for (j = 0; j < n; j++)
 arr[i] = s2[j];
 i++;
 }
+arr[total] = '\0';
 
 return (arr);
 }
