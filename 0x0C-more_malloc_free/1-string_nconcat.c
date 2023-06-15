@@ -18,9 +18,9 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-for (i = 0; s1[i] != '\0'; i++)
+for (i = 0; s1[i]; i++)
 ;
-for (j = 0; s2[j] != '\0'; j++)
+for (j = 0; s2[j]; j++)
 ;
 
 if (n >= j + 1)
@@ -33,7 +33,7 @@ arr = malloc(total);
 if (arr == NULL)
 return (NULL);
 
-for (i = 0; s1[i] != '\0'; i++)
+for (i = 0; s1[i]; i++)
 {
 arr[i] = s1[i];
 }
@@ -43,7 +43,7 @@ for (j = 0; i < total; j++)
 arr[i] = s2[j];
 i++;
 }
-arr[total] = '\0';
+arr[total - 1] = '\0';
 
 return (arr);
 }
