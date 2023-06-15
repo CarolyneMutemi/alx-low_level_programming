@@ -34,7 +34,7 @@ return (p_pArr);
 
 for (i = 0; i < height; i++)
 {
-free(p_pArr);
+free(p_pArr[i]);
 }
 free(p_pArr);
 }
