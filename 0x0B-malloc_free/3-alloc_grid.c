@@ -32,9 +32,11 @@ p_pArr[i][j] = 0;
 
 return (p_pArr);
 
-for (a = 0; a < height; a++)
+while (i >= 0)
 {
-free(p_pArr[a]);
+free(p_pArr[i]);
+i--;
 }
 free(p_pArr);
+return (NULL);
 }
