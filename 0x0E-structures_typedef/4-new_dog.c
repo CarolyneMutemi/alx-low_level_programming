@@ -20,4 +20,5 @@ maxie->age = age;
 maxie->name = name;
 maxie->owner = owner;
 return (maxie);
+free(maxie);
 }
