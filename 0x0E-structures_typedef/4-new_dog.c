@@ -15,6 +15,7 @@ dog_t *maxie = malloc(sizeof(dog_t));
 if (maxie == NULL)
 {
 return (NULL);
+free(maxie);
 }
 maxie->age = age;
 maxie->name = name;
