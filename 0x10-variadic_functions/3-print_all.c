@@ -12,7 +12,7 @@ unsigned int j = 0;
 char *str;
 
 va_start(args, format);
-while (format[j])
+while (format && format[j])
 {
 switch (format[j])
 {
