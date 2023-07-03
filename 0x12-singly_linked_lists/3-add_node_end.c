@@ -16,7 +16,6 @@ if (!ptr)
 return (NULL);
 free(ptr);
 ptr = NULL;
-exit(1);
 }
 
 ptr->str = strdup(str);
@@ -25,8 +24,8 @@ ptr->next = NULL;
 
 if (!ptr->str)
 {
-    free(ptr->str);
-    ptr->str = NULL;
+free(ptr->str);
+ptr->str = NULL;
 }
 
 if (*head == NULL)
