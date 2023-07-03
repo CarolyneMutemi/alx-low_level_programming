@@ -13,8 +13,7 @@ size_t count = 0;
 
 if (h == NULL)
 {
-printf("Error\n");
-return (1);
+return (0);
 }
 
 ptr = h;

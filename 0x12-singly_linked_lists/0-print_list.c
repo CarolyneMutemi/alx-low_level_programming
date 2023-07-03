@@ -12,8 +12,7 @@ size_t count = 0;
 const list_t *ptr = NULL;
 if (h == NULL)
 {
-printf("Error\n");
-return (1);
+return (0);
 }
 ptr = h;
 
