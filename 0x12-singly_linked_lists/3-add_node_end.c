@@ -11,21 +11,17 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *temp = NULL;
 list_t *ptr = malloc(sizeof(list_t));
-if (!ptr)
-{
-return (NULL);
-free(ptr);
-ptr = NULL;
-}
 
 ptr->str = strdup(str);
 ptr->len = strlen(ptr->str);
 ptr->next = NULL;
 
-if (!ptr->str)
+if (!ptr || !ptr->str)
 {
 free(ptr->str);
+free(ptr);
 ptr->str = NULL;
+ptr = NULL;
 }
 
 if (*head == NULL)
