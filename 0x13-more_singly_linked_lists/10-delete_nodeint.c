@@ -13,10 +13,8 @@ listint_t *temp, *ptr = *head;
 unsigned int count = 1;
 temp = NULL;
 
-if (!(*head))
+if (*head == NULL)
 {
-free(*head);
-*head = NULL;
 return (-1);
 }
 
