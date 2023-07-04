@@ -19,4 +19,5 @@ temp = temp->next;
 free(*head);
 *head = temp;
 }
+*head = NULL;
 }
