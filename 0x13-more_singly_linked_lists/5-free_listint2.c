@@ -11,8 +11,8 @@ listint_t *temp = NULL;
 
 if (!*head)
 {
-    free(*head);
-    *head = NULL;
+free(*head);
+*head = NULL;
 }
 temp = *head;
 
