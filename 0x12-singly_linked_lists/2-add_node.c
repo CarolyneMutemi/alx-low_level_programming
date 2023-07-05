@@ -14,16 +14,23 @@ if (!ptr)
 {
 return (NULL);
 free(ptr);
-ptr = NULL;
 }
+
+if (str == NULL)
+{
+    ptr->str = NULL;
+}
+else
+{
 ptr->str = strdup(str);
 ptr->len = strlen(ptr->str);
-
 if (!ptr->str)
 {
 free(ptr->str);
 ptr->str = NULL;
 }
+}
+
 
 ptr->next = *head;
 *head = ptr;
