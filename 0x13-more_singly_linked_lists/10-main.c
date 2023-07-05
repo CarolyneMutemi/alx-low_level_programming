@@ -14,8 +14,8 @@ int main(void)
 
     head = NULL;
     add_nodeint_end(&head, 90);
-    /*add_nodeint_end(&head, 1);
-    add_nodeint_end(&head, 2);
+    add_nodeint_end(&head, 1);
+    /*add_nodeint_end(&head, 2);
     add_nodeint_end(&head, 3);
     add_nodeint_end(&head, 4);
     add_nodeint_end(&head, 98);
@@ -26,7 +26,7 @@ int main(void)
     delete_nodeint_at_index(&head, 45);
     print_listint(head);
     printf("-----------------\n");
-    delete_nodeint_at_index(&head, 5);
+    delete_nodeint_at_index(&head, 2);
     print_listint(head);
     printf("-----------------\n");
     delete_nodeint_at_index(&head, 0);
