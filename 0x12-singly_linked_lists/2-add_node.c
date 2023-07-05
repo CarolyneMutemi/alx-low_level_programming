@@ -18,7 +18,7 @@ free(ptr);
 
 if (str == NULL)
 {
-    ptr->str = NULL;
+ptr->str = NULL;
 }
 else
 {
