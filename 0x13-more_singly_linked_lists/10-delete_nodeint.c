@@ -32,12 +32,13 @@ count++;
 ptr = ptr->next;
 if (ptr->next == NULL)
 {
-return (-1);
 break;
 }
 }
 if (ptr->next == NULL)
-{}
+{
+return (-1);
+}
 temp = ptr->next;
 ptr->next = ptr->next->next;
 free(temp);
