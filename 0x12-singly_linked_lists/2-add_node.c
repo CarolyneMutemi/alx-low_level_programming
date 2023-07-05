@@ -13,7 +13,6 @@ list_t *ptr = malloc(sizeof(list_t));
 if (!ptr)
 {
 return (NULL);
-free(ptr->str);
 free(ptr);
 }
 
@@ -28,7 +27,6 @@ ptr->len = strlen(ptr->str);
 if (!ptr->str)
 {
 free(ptr->str);
-ptr->str = NULL;
 }
 }
 
