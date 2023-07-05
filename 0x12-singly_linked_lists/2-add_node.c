@@ -23,13 +23,14 @@ free(ptr);
 }
 
 ptr->str = strdup(str);
-ptr->len = strlen(ptr->str);
 if (!ptr->str)
 {
 free(ptr->str);
 free(ptr);
 return (NULL);
 }
+
+ptr->len = strlen(ptr->str);
 
 ptr->next = *head;
 *head = ptr;
