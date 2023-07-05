@@ -42,7 +42,6 @@ return (-1);
 temp = ptr->next;
 ptr->next = ptr->next->next;
 free(temp);
-temp = NULL;
 
 return (1);
 }
