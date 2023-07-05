@@ -24,7 +24,7 @@ else
 {
 ptr->str = strdup(str);
 ptr->len = strlen(ptr->str);
-if (!ptr->str)
+if (ptr->str == NULL)
 {
 free(ptr->str);
 ptr->str = NULL;
