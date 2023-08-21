@@ -40,3 +40,5 @@ main.c
 _putchar.c
 _putchar.o
 len
+op.c
+100-tests.py
