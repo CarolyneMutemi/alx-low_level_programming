@@ -26,7 +26,9 @@ for (j = 0; j < width; j++)
 p_pArr[i][j] = 0;
 }
 }
+
 return (p_pArr);
+
 for (i = 0; i < height; i++)
 {
 free(p_pArr[i]);
