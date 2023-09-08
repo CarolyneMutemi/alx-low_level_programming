@@ -12,17 +12,37 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *item_ptr;
+	hash_node_t *new_item;
 
 	if (!key || strcmp(key, "") == 0)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-	item_ptr = create_item(key, value);
+	new_item = create_item(key, value);
 
-	if (!item_ptr)
+	if (!new_item)
 		return (0);
 
-	ht->array[index] = item_ptr;
+	item_ptr = ht->array[index];
+
+	if (!item_ptr)
+	{
+		ht->array[index] = new_item;
+		return (1);
+	}
+
+	if (strcmp(item_ptr->key, key) == 0)
+	{
+		strcpy(item_ptr->value, value);
+		return (1);
+	}
+	else
+	{
+		ht->array[index] = new_item;
+		new_item->next = item_ptr;
+		return (1);
+	}
+
 	return (1);
 }
 
@@ -40,8 +60,8 @@ hash_node_t *create_item(const char *key, const char *value)
 	if (!item)
 		return (NULL);
 
-	item->key = NULL;
-	item->value = NULL;
+	item->key = malloc(sizeof(char) * strlen(key));
+	item->value = malloc(sizeof(char) * strlen(value));
 	strcpy(item->key, key);
 	strcpy(item->value, value);
 	item->next = NULL;
