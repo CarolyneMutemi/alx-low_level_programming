@@ -32,6 +32,11 @@ int main(void)
     shash_table_set(ht, "hetairas", "First");
     shash_table_print(ht);
     shash_table_set(ht, "mentioner", "Zero");
+    shash_table_set(ht, "Holberton", "is cool");
+    shash_table_print(ht);
+    shash_table_set(ht, "Holberton", "is soooo cooool");
+    shash_table_print(ht);
+    shash_table_set(ht, "Holberton", "is awesome");
     shash_table_print(ht);
     shash_table_print_rev(ht);
     shash_table_delete(ht);
