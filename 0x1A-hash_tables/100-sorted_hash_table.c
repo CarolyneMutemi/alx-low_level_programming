@@ -85,10 +85,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			while (temp->snext)
 			{
 				temp = temp->snext;
-				if (strcmp(item->key, temp->key) == 0)
-				{
-					break;
-				}
 				if (strcmp(item->key, temp->key) < 0)
 				{
 					item->sprev = temp->sprev;
