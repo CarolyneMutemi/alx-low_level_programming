@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""
+Finds perimeter of an island.
+"""
 
-# Finds perimeter of an island.
 
 def cells_around(idx_list, idx_cell, grid):
     """
