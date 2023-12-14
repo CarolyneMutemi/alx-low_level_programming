@@ -13,35 +13,23 @@ void print_array(int *array, size_t beg, size_t end);
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t mid = size / 2;
+	size_t mid;
 	size_t beg = 0;
-	size_t end = size;
+	size_t end = size - 1;
 
-	printf("Searching in array: ");
-	print_array(array, 0, size);
-	while (array[mid] != value)
+	while (beg <= end && end < size)
 	{
+		printf("Searching in array: ");
+		print_array(array, beg, end + 1);
+		mid = beg + ((end - beg) / 2);
+		if (array[mid] == value)
+			return (mid);
 		if (value > array[mid])
-		{
 			beg = mid + 1;
-			printf("Searching in array: ");
-			print_array(array, beg, end);
-			mid += ((end - mid) / 2);
-		}
 		else
-		{
-			end = mid;
-			printf("Searching in array: ");
-			print_array(array, beg, end);
-			mid -= (((mid - beg) / 2) + 1);
-		}
-		if ((mid == 0 && array[mid] != value) || (mid == size - 1 &&
-					array[mid] != value))
-		{
-			return (-1);
-		}
+			end = mid - 1;
 	}
-	return (mid);
+	return (-1);
 }
 
 /**
